@@ -59,3 +59,17 @@ Número do CV deve ser trocado a cada enlace e novo número do CV vem da tabela 
 - Roteadores não guardam estado.
 - Pacotes são repassados utilizando endereço de destino.
 - 2 pacotes entre o mesmo par origem-destino podem seguir caminhos diferentes
+
+## Tabela de Repasse
+
+### Busca por um endereço de destino
+Ao buscar por entrada na tabela de repasse por um dado endereço de destino, usa-se o prefixo mais longo que bate com o endereço do destino.
+
+## Roteadores
+
+### Funções
+- Rodam algoritmos / protocol de roteamento
+- Repassam datagramas do enlace de entrada para o de saída
+
+## Portas de Entrada
+As portas de entrada de um roteador recebem um datagrama, procuram a porta de saída usando a tabela de rotas na memória da porta de entrada. Sua meta é completar o processamento da porta na **velocidade da linha**. Caso datagramas cheguem mais rápido do que a taxa de reenvio para o elemento de comutação, filas surgem na porta de entrada.
