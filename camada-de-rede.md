@@ -73,3 +73,8 @@ Ao buscar por entrada na tabela de repasse por um dado endereço de destino, usa
 
 ## Portas de Entrada
 As portas de entrada de um roteador recebem um datagrama, procuram a porta de saída usando a tabela de rotas na memória da porta de entrada. Sua meta é completar o processamento da porta na **velocidade da linha**. Caso datagramas cheguem mais rápido do que a taxa de reenvio para o elemento de comutação, filas surgem na porta de entrada.
+
+## Elementro (matriz) de comutação
+- Transfere pacotes do buffer de entrada para o buffer de saída apropriado
+- A taxa na qual os pacotes podem ser transferidos das entradas para as saídas se chama **taxa de comutação**.
+- Taxa ideal para N entradas: N vezes a taxa da linha.
