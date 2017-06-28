@@ -29,3 +29,28 @@ Algoritmo de roteamento determina o caminho fim-a-fim através da rede. A cada r
 
 ## Estabelecimento de conexão
 Antes dos pacotes fluírem, dois hosts e os roteadores intermediários estabelecem uma conexão virtual.
+
+## Serviço de cada de rede
+
+### Orientado à conexão
+
+#### Redes de circuitos virtuais
+- Provê um serviço de camada de rede orientado para conexões.
+- Caminho da-origem-ao-destino se comporta como um circuito telefônico em termos de desempenho e em ações da rede ao longo do caminho da-origem-ao-destino
+- Estabelecimento de cada chamada antes do envio dos dados
+- Cada pacote tem ident. de CV (e não endereços origem/dest)
+- Cada roteador no caminho da-origem-ao-destino mantém “estado” para cada conexão que o atravessa
+- Recursos de enlace, roteador (banda, buffers) podem ser alocados ao CV (recursos dedicados = serviço previsível)
+
+##### Implementação
+Um cirtuito virtual consiste de:
+- Caminho da origem para o destino
+- Números (identificadores) de circuito virtual, um número para cada enlace ao longo do caminho
+- Entradas nas tabelas de repasse dos roteadores ao longo do caminho
+
+Um pacote que pertence a um circuito virtual carrega o número do circuito virtual (ao invés do endereço de destino).
+Número do CV deve ser trocado a cada enlace e novo número do CV vem da tabela de repasse.
+
+### Sem conexões
+Rede datagrama provê um serviço de camada de rede sem conexões.
+-
