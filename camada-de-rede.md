@@ -74,7 +74,27 @@ Ao buscar por entrada na tabela de repasse por um dado endereço de destino, usa
 ## Portas de Entrada
 As portas de entrada de um roteador recebem um datagrama, procuram a porta de saída usando a tabela de rotas na memória da porta de entrada. Sua meta é completar o processamento da porta na **velocidade da linha**. Caso datagramas cheguem mais rápido do que a taxa de reenvio para o elemento de comutação, filas surgem na porta de entrada.
 
-## Elementro (matriz) de comutação
+### Elementro (matriz) de comutação
 - Transfere pacotes do buffer de entrada para o buffer de saída apropriado
 - A taxa na qual os pacotes podem ser transferidos das entradas para as saídas se chama **taxa de comutação**.
 - Taxa ideal para N entradas: N vezes a taxa da linha.
+
+#### Comutação por Memória
+Era utilizada por roteadores da primeira geração, que eram computadores tradicionais com comutação controlada diretamente pela CPU. O pacote era copiado para a memória do sistema e a velocidade era limitada pela largura de banda da memória (2 travessias do barramento por datagrama)
+
+#### Comutação por barramento
+Datagrama vai da memória da porta de entrada para a memória da porta de saída via um barramento compartilhado. A taxa de comutação é limitada pela largura de banda do barramento.
+
+#### Comutação por rede de interconexão
+Supera as limitações de banda dos barramentos. Redes de Bayan são um exemplo.
+
+### Filas
+Se o elemento de comutação for mais lento do que a soma das portas de entrada juntas pode haver filas nas portas de entrada.
+Se o buffer de entrada transbordar (ou seja, a fila ficar tão grande a ponto de não caber mais nada no buffer de entrada), vão ocorrer perdas.
+Quando um datagrama na cabeça da fila impede outros na mesma fila de avançarem, ocorre o chamado **bloqueio de cabeça de fila**.
+
+## Porta de saída
+As portas de saída recebem um datagrama e repassam para o nó de destino. O enfileiramento ocorre quando datagramas chegam mais rapidamente do que a taxa de transmissão. Um desses datagramas será escolhido para transmissão de acordo com algum algoritmo de escalonamento.
+
+## Enfileiramento médio
+Igual ao RTT típico (250 millisegundos) vezes a capacidade do link C. C = 10Gbps, buffer de 2,5Gbit. Com n fluxos, enfileiramento igual a (RTT * C) / sqrt(N).
