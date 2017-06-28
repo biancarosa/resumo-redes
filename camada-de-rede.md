@@ -47,10 +47,15 @@ Um cirtuito virtual consiste de:
 - Caminho da origem para o destino
 - Números (identificadores) de circuito virtual, um número para cada enlace ao longo do caminho
 - Entradas nas tabelas de repasse dos roteadores ao longo do caminho
+- Roteadores guardam estado.
 
 Um pacote que pertence a um circuito virtual carrega o número do circuito virtual (ao invés do endereço de destino).
 Número do CV deve ser trocado a cada enlace e novo número do CV vem da tabela de repasse.
 
 ### Sem conexões
-Rede datagrama provê um serviço de camada de rede sem conexões.
--
+#### Redes de datagramas
+- Provêem um serviço de camada de rede sem conexões.
+- Modelo usado na internet.
+- Roteadores não guardam estado.
+- Pacotes são repassados utilizando endereço de destino.
+- 2 pacotes entre o mesmo par origem-destino podem seguir caminhos diferentes
