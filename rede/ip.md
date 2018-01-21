@@ -19,4 +19,8 @@ DHCP: Dynamic Host Configuration Protocol
 O DHCP também retorna:
 - endereço do próximo roteador para o cliente
 - nome e endereço IP do servidor DNS
-- máscara de rede (indicando as porções do endereço que identificam a rede e o hospedeiro) 
+- máscara de rede (indicando as porções do endereço que identificam a rede e o hospedeiro)
+
+## IPv6
+
+### Diferenças
