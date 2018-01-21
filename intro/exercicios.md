@@ -17,7 +17,7 @@
 - #todo
 
 7. Qual é a taxa de transmissão de LANs Ethernet? Para uma dada taxa de transmissão, cada usuário da LAN pode transmitir continuamente a essa taxa?
-- #todo
+- 10 Mb/s, 100 Mb/s, 1 Gb/s, 10 Gb/s. Essas taxa é dividida entre todos os usuários ativos no momento, ou seja, caso um usuário seja o único ativo, ele poderá transmitir na taxa máxima.
 
 8. Cite alguns meios físicos utilizados para instalar a Ethernet.
 - Fios de cobre trançados. Cabos coaxiais, fibras óticas e espectros de rádio.
@@ -26,7 +26,7 @@
 - Modem discado: transmissão de 56kbps e sua largura de banda é dedicada. HFC é compartilhada e tem faixa de transmissão de 3-50Mbps. ADSL é compartilhada e sua faixa de transmissão é de 15mbps.
 
 10. Descreva as tecnologias de acesso sem fio mais populares atualmente. Faça uma comparação entre elas.
-- 3G/4G vs Wifi.
+- 3G/4G vs Wifi. O 3G/4G utiliza a rede de celular para conseguir internet, numa velocidade geralmente mais baixa.
 
 11. Qual a vantagem de uma rede de comutação de circuitos em relação a uma de comutação de pacotes? Quais são as vantagens da TDM sobre a FDM em uma rede de comutação de circuitos?
 - A rede de comutação de circuitos trabalha com sessões reservadas, ou seja, esse caminho não fica congestionado, enquanto uma de comutação de pacotes corre o risco de congestionar um caminho e atrasar a chegada do pacote. A TDM disponibiliza toda a largura de banda durante um período de tampo, sendo mais rápida do que a FDM.
@@ -38,7 +38,7 @@
 - D = L/R1 + L/R2
 
 14. Qual a principal diferença que distingue ISPs de nível 1 e de nível 2?
-- #todo
+- ISPs de nível 1 se conectam a todos os ISPs de nível 1, enquanto ISPs de nivel 2 se conectam apenas a alguns ISPs de nível 1.
 
 15. Suponha que usuários compartilhem um enlace de 2 Mbps e que cada usuário transmita continuamente a 1 Mbps, mas cada um deles transmite apenas 20 por cento do tempo. Suponha ainda que seja utilizada a comutação de pacotes.
 A) Quando a comutação de circuitos é utilizada, quantos usuários podem usar o enlace?
@@ -48,11 +48,13 @@ D) Suponha agora que haja três usuários. Determine a probabilidade de, a qualq
 - #todo
 
 16. Considere o envio de um pacote de uma máquina de origem a uma de destino por uma rota fixa. Relacione os componentes do atraso que formam o atraso fim a fim. Quais deles são constantes e quais são variáveis?
-- #todo
+- Os atrasos constantes são os atrasos de processamento, trasmissão, propagação. O atraso variável é o atraso devido ao tamanho da fila.
 
 17. Visite o applet "Transmission versus Propagation Delay" no Companion Website. Entre as taxas, o atraso de propagação e os tamanhos de pacote disponíveis, determine uma combinação para a qual o emissor termine de transmitir antes que o primeiro bit do pacote chegue ao receptor.
+- #todo
 
 18. Quanto tempo um pacote de 1.000 bytes leva para se propagar através de um enlace de 2.500 km de distância, com uma velocidade de propagação de 2,5 • l0Km/s e uma taxa de transmissão de 2 Mbps? Geralmente, quanto tempo um pacote de comprimento L leva para se propagar através de um enlace de distância d, velocidade de propagação s, e taxa de transmissão de R bps? Esse atraso depende cio comprimento do pacote? Esse atraso depende da taxa de transmissão?
+- #todo
 
 19. Suponha que o Hospedeiro A queira enviar um arquivo grande para o Hospedeiro B. O percurso do Hospedeiro A para o Hospedeiro B possui três enlaces, de taxas R, = 500 kbps, R ,= 2 Mbps, e R5 = 1 Mbps.
 a. Considerando que não haja nenhum outro tráfego na rede, qual é a vazão para a transferência de arquivo?
