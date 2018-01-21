@@ -13,13 +13,13 @@
 5. A taxa de transmissão HFC é dedicada ou é compartilhada entre usuários? É possível haver colisões na direção provedor-usuário de um canal HFC? Por quê?
 - É compartilhada entre usuários. É possível haver colisões porque se vários usuários requisitarem algo ao mesmo tempo, a velocidade do tráfego diminui e uma resposta do provedor pode colidir com um envio de requisição.
 
-6.Cite seis tecnologias de acesso residencial disponíveis em sua cidade. Para cada tipo de acesso, apresente a taxa downstream, a taxa upstream e o preço mensal anunciados.
+6. Cite seis tecnologias de acesso residencial disponíveis em sua cidade. Para cada tipo de acesso, apresente a taxa downstream, a taxa upstream e o preço mensal anunciados.
 - #todo
 
-7.Qual é a taxa de transmissão de LANs Ethernet? Para uma dada taxa de transmissão, cada usuário da LAN pode transmitir continuamente a essa taxa?
+7. Qual é a taxa de transmissão de LANs Ethernet? Para uma dada taxa de transmissão, cada usuário da LAN pode transmitir continuamente a essa taxa?
 - #todo
 
-8.Cite alguns meios físicos utilizados para instalar a Ethernet.
+8. Cite alguns meios físicos utilizados para instalar a Ethernet.
 - Fios de cobre trançados. Cabos coaxiais, fibras óticas e espectros de rádio.
 
 9. Modems discados, HFC e ADSL são usados para acesso residencial. Para cada uma dessas tecnologias de acesso, cite uma faixa de taxas de transmissão e comente se a largura de banda é compartilhada ou dedicada.
