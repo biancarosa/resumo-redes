@@ -41,11 +41,18 @@
 - ISPs de nível 1 se conectam a todos os ISPs de nível 1, enquanto ISPs de nivel 2 se conectam apenas a alguns ISPs de nível 1.
 
 15. Suponha que usuários compartilhem um enlace de 2 Mbps e que cada usuário transmita continuamente a 1 Mbps, mas cada um deles transmite apenas 20 por cento do tempo. Suponha ainda que seja utilizada a comutação de pacotes.
+
 A) Quando a comutação de circuitos é utilizada, quantos usuários podem usar o enlace?
+-  Durante a comutação de circuitos, 2 usuários podem utilizar o sistema.
+
 B) Para o restante deste problema, suponha que seja utilizada a comutação de pacotes. Por que não haverá atraso de fila antes de um enlace se dois ou menos usuários transmitirem ao mesmo tempo? Por que haverá atraso de fila se três usuários transmitirem ao mesmo tempo?
+- Porque se dois ou menos usuários transmitirem ao mesmo tempo, teremos dois pacotes sendo transmitidos a 1Mbps, e o total do enlace é de 2 Mbps. Enquanto esses dois usuários estiverem transmitindo, qualquer novo pacote será enfileirado devido a capacidade máxima do enlace.
+
 C) Determine a probabilidade de um dado usuário estar transmitindo.
+- # todo
+
 D) Suponha agora que haja três usuários. Determine a probabilidade de, a qualquer momento, os três usuários transmitirem simultaneamente. Determine a fração de tempo durante o qual a fila cresce.
-- #todo
+- todo
 
 16. Considere o envio de um pacote de uma máquina de origem a uma de destino por uma rota fixa. Relacione os componentes do atraso que formam o atraso fim a fim. Quais deles são constantes e quais são variáveis?
 - Os atrasos constantes são os atrasos de processamento, trasmissão, propagação. O atraso variável é o atraso devido ao tamanho da fila.
@@ -69,16 +76,19 @@ c. Repita os itens “a" e “b”, mas agora com R, reduzido a 100 kbps.
 - #todo
 
 22. Cite cinco tarefas que uma camada pode executar. É possível que uma (ou mais) dessas tarefas seja(m) realizada(s) por duas (ou mais) camadas?
-- #todo
+- Uma camada pode garantir a entrega, pode garantir que os dados não estão corrompidos, pode ter retentativa, pode garantir que estão sendo entregues para a pessoa certa. Uma ou mais camadas podem garantir a confiabilidade dos dados, por exemplo.
 
 23. Quais são as cinco camadas da pilha de protocolo da Internet? Quais as principais responsabilidades de cada uma dessas camadas?
-- #todo
+- Aplicação, rede, transporte, enlace e física.
+Explicação - #todo.
 
 24. O que é uma mensagem de camada de aplicação? Um segmento de camada de transporte? Um data-grama de camada de rede? Um quadro de camada de enlace?
-- #todo
+- É o dado na sua forma mais fragmentada (dentro dessa camada) que será repassado para a próxima camada. São pedaços do dado como um todo.
 
 25. Que camadas da pilha do protocolo da Internet um roteador implementa? Que camadas um comutador de camada de enlace implementa? Que camadas um sistema final implementa?
-- #todo
+- Roteador - rede, transporte, enlace
+Comutador - transporte enlace.
+Sistema Final - aplicaçao, rede, transporte.
 
 26. Qual é a diferença entre um vírus e um worm?
 - #todo
