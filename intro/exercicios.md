@@ -87,7 +87,7 @@ Explicação - #todo.
 
 25. Que camadas da pilha do protocolo da Internet um roteador implementa? Que camadas um comutador de camada de enlace implementa? Que camadas um sistema final implementa?
 - Roteador - rede, transporte, enlace
-Comutador - transporte enlace.
+Comutador - transporte, enlace.
 Sistema Final - aplicaçao, rede, transporte.
 
 26. Qual é a diferença entre um vírus e um worm?
