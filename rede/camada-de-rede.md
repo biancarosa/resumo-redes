@@ -3,7 +3,7 @@
 ## Introdução
 
 ### Objetivo
-- Transporta segmentos da estação remetente à estação receptora
+- Transportar segmentos da estação remetente à estação receptora
 
 ### Remetente
 - Recebe segmentos da camada de transporte
@@ -35,7 +35,7 @@ Antes dos pacotes fluírem, dois hosts e os roteadores intermediários estabelec
 ### Orientado à conexão
 
 #### Redes de circuitos virtuais
-- Provê u m serviço de camada de rede orientado para conexões.
+- Provê um serviço de camada de rede orientado para conexões.
 - Caminho da-origem-ao-destino se comporta como um circuito telefônico em termos de desempenho e em ações da rede ao longo do caminho da-origem-ao-destino
 - Estabelecimento de cada chamada antes do envio dos dados
 - Cada pacote tem ident. de CV (e não endereços origem/dest)

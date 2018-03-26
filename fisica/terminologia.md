@@ -1,0 +1,15 @@
+- Transmissor
+- Receptor
+- Meio guiado (Ex: par trançado, fibra ótica)
+- Meio não guiado (Ex: ar, água, vácuo)
+- Enlace direto (Sem dispositivos intermediário)
+- Ponto a ponto (enlace direto, apenas dois dispositivos compartilham o enlace)
+- Multiponto (Mais de dois dispositivos compartilham o enlace)
+- Simplex (Unidirecional, Ex. Televisão)
+- Half duplex (Ambas direções, mas apenas uma por vez. Ex. Rádio policial)
+- Full duplex (Ambas direções. Ex. telefone)
+
+- Sinal analógico (Varia de modo “suave” no tempo)
+- Sinal digital (Mantém um nível constante de energia e então muda para outro nível constante de energia)
+- Sinal periódico (Padrões que se repetem no tempo)
+- Sinais não periódicos (Padrões que se repetem no tempo)
