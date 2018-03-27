@@ -113,3 +113,9 @@ Dar suporte aos casos de uso comuns atuais do HTTP
 - HTTP/2 permite ao servidor enviar (push) conteúdo, i.e., enviar mais dados que os solicitados pelo cliente.
 - Multiplexa os pedidos e as respostas para evitar o problema de bloqueio pelo cabeça da fila do HTTP 1.1.
 - Realiza ainda um controle de fluxo e priorização dos pedidos.
+
+# rdt - criando um protocolo
+
+# go back n
+
+admite janela de até n pacotes consecutivos não reconhecidos.
